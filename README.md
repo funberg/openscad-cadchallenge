@@ -52,5 +52,14 @@
 <img src="15.jpg" alt="challenge 15" width="256px"/>
 <img src="renders/15_scad.png" alt="challenge 15 scad" width="256px"/>
 
+## Challenge 16
+<img src="16.jpg" alt="challenge 16" width="256px"/>
+<img src="renders/16_scad.png" alt="challenge 16 scad" width="256px"/>
 
+## Challenge 17
+<img src="17.jpg" alt="challenge 17" width="256px"/>
+<img src="renders/17_scad.png" alt="challenge 17 scad" width="256px"/>
 
+## Challenge 20
+<img src="20.png" alt="challenge 20" width="256px"/>
+<img src="renders/20_scad.png" alt="challenge 20 scad" width="256px"/>
