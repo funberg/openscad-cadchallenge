@@ -1,4 +1,5 @@
 import cadquery as cq
+from jupyter_cadquery.viewer.client import show, show_object
 
 w = 60.0
 h = 120.0
@@ -28,4 +29,6 @@ cq.Workplane("XY")
 .box(15, 15, 20, centered=False)
 )
 
-show_object(v3)
+# Rotate for viewing
+v3 = v3.rotate((0, 0, 0), (0, 0, 1), -90)
+show(v3)
