@@ -3,14 +3,17 @@
 ## Challenge 1
 <img src="1.png" alt="challenge 1" width="256px"/>
 <img src="renders/1_scad.png" alt="challenge 1 scad" width="256px"/>
+<img src="renders/1_cq.png" alt="challenge 1 cq" width="256px"/>
 
 ## Challenge 2
 <img src="2.jpg" alt="challenge 2" width="256px"/>
 <img src="renders/2_scad.png" alt="challenge 2 scad" width="256px"/>
+<img src="renders/2_cq.png" alt="challenge 2 cq" width="256px"/>
 
 ## Challenge 3
 <img src="3.jpg" alt="challenge 3" width="256px"/>
 <img src="renders/3_scad.png" alt="challenge 3 scad" width="256px"/>
+<img src="renders/3_cq.png" alt="challenge 3 cq" width="256px"/>
 
 ## Challenge 4
 <img src="4.jpg" alt="challenge 4" width="256px"/>
