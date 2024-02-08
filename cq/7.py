@@ -1,6 +1,5 @@
 import cadquery as cq
-from ocp_vscode import show, show_object, reset_show, set_port, set_defaults, get_defaults
-set_port(3939)
+from ocp_vscode import show
 
 base = (
     cq.Workplane("XY")
@@ -41,17 +40,14 @@ top = (
     .hull()
     .finalize()
     .extrude(20, combine="cut")
-
 )
 
 res = (
     base.union(top)
-
     .faces("<Z[1]")
     .workplane()
     .move(62/2, 100-37+20)
     .hole(10)
 )
 
-show(res,  measure_tools=True)
- 
+show(res)

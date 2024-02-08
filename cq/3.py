@@ -1,27 +1,26 @@
 import cadquery as cq
-from jupyter_cadquery.viewer.client import show, show_object
+from ocp_vscode import show
 
 w=88
 h=50
 t=56
 
-
 v1 = (
-cq.Workplane("XY")
+    cq.Workplane("XY")
 
-# Base block
-.box(w, h, 18, centered=False)
+    # Base block
+    .box(w, h, 18, centered=False)
 
-# X-hwise bar
-.faces(">Z")
-.workplane().tag("base")
-.workplane(origin=(0,28))
-.box(w, 12, t-18, centered=False)
+    # X-hwise bar
+    .faces(">Z")
+    .workplane().tag("base")
+    .workplane(origin=(0,28))
+    .box(w, 12, t-18, centered=False)
 
-# Y-base bar
-.workplaneFromTagged("base")
-.workplane(origin=(38, 0))
-.box(12, h, t-18, centered=False)
+    # Y-base bar
+    .workplaneFromTagged("base")
+    .workplane(origin=(38, 0))
+    .box(12, h, t-18, centered=False)
 )
 
 # Slice plane

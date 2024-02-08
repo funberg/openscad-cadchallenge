@@ -1,6 +1,5 @@
 import cadquery as cq
-from ocp_vscode import show, set_port
-set_port(3939)
+from ocp_vscode import show
 
 v1 = (
     cq.Workplane("XY")
@@ -58,5 +57,4 @@ b2 = (
 res = v1.union(b1).union(b2).union(cyl2)
 res = res.rotate((0, 0, 0), (0, 0, 1), 90)
 
-#show(v1, b1, b2, cyl2, measure_tools="a")
-show(res, measure_tools="a")
+show(res)

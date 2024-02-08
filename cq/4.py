@@ -1,5 +1,5 @@
 import cadquery as cq
-from jupyter_cadquery.viewer.client import show, show_object
+from ocp_vscode import show
 
 v1 = (
     cq.Workplane("XY")

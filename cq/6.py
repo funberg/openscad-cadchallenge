@@ -1,7 +1,6 @@
 import cadquery as cq
 import math
-from ocp_vscode import show, set_port, show_object, Camera
-set_port(3939)
+from ocp_vscode import show, Camera
 
 taper = math.degrees(math.atan(.156/.125))
 base = (
@@ -45,5 +44,4 @@ hole = (
     .extrude(-2, taper=50, combine="cut")
 )
 
-#res = res.rotate((0, 0, 0), (0, 0, 1), 90)
-show(v1, hole, measure_tools=True, reset_camera=Camera.KEEP)
+show(v1, hole, reset_camera=Camera.KEEP)
