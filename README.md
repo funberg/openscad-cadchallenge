@@ -33,6 +33,7 @@
 ## Challenge 7
 <img src="7.jpg" alt="challenge 7" width="256px"/>
 <img src="renders/7_scad.png" alt="challenge 7 scad" width="256px"/>
+<img src="renders/7_cq.png" alt="challenge 7 cq" width="256px"/>
 
 ## Challenge 8
 <img src="8.jpg" alt="challenge 8" width="256px"/>
