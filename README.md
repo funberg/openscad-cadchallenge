@@ -23,6 +23,7 @@
 ## Challenge 5A
 <img src="5A.jpg" alt="challenge 5A" width="256px"/>
 <img src="renders/5A_scad.png" alt="challenge 5A scad" width="256px"/>
+<img src="renders/5A_cq.png" alt="challenge 5A cq" width="256px"/>
 
 ## Challenge 6
 <img src="6.png" alt="challenge 6" width="256px"/>
