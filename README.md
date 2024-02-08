@@ -28,6 +28,7 @@
 ## Challenge 6
 <img src="6.png" alt="challenge 6" width="256px"/>
 <img src="renders/6_scad.png" alt="challenge 6 scad" width="256px"/>
+<img src="renders/6_cq.png" alt="challenge 6 cq" width="256px"/>
 
 ## Challenge 7
 <img src="7.jpg" alt="challenge 7" width="256px"/>
