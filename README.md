@@ -43,6 +43,7 @@
 ## Challenge 9
 <img src="9.png" alt="challenge 9" width="256px"/>
 <img src="renders/9_scad.png" alt="challenge 9 scad" width="256px"/>
+<img src="renders/9_cq.png" alt="challenge 9 cq" width="256px"/>
 
 ## Challenge 10
 <img src="10.jpg" alt="challenge 10" width="256px"/>
