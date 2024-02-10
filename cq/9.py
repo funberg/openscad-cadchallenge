@@ -16,6 +16,8 @@ class n2(Selector):
 
         return sorted(objectList, key=dist)[:2]
 
+b = cq.selectors.BoxSelector
+
 def makePart(s, ri, ro):
     # (17, 13, 16)
     r = s/2
