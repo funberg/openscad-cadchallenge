@@ -9,6 +9,7 @@ conda config --env --set subdir osx-64
 
 pip install cadquery
 pip install ocp_vscode
+pip install watchfiles
 
 ## Optional
 pip install build123d
@@ -21,7 +22,5 @@ https://marketplace.visualstudio.com/items?itemName=bernhard-42.ocp-cad-viewer
 
 Select Conda 'cq'
 
-
-```
-from ocp_vscode import show, set_port
-```
+# Auto reload
+run `ocp_auto_update.py PATH_TO_CQ_FILES` and viewer will reload on save
