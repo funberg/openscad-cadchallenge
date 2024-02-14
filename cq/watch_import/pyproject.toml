@@ -1,0 +1,26 @@
+[project]
+name = "watch_import"
+version = "0.0.1"
+authors = [
+    {name = "Daniel Sundberg", email = "daniel.sundberg@that-g-one-dot.com}"},
+]
+description = "Watch target file/folder for changes in python files and import/reimport"
+readme = "README.md"
+requires-python = ">=3.8"
+keywords = ["import", "reimport", "save"]
+license = {text = "MIT"}
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+
+dependencies = [
+    "watchfiles"
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project.scripts]
+watch_import = "watch_import.module:watch_args"

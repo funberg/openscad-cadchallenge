@@ -21,13 +21,21 @@ class myfinder(importlib.abc.MetaPathFinder):
             return specs[full]
         return None
 
+sys.meta_path.append(myfinder())
+
 async def main(pwd):
     print(f"Watching {pwd} for changes")
     async for changes in awatch(pwd, watch_filter=PythonFilter()):
         for c in changes:
             fn = c[1]
-            rfn = os.path.relpath(fn, pwd)
-            name, ext = os.path.splitext(rfn)
+            rfn = os.path.relpath(fn, os.path.basename(pwd))
+
+            if fn == pwd:
+                name = 'current'
+            else:
+                name, ext = os.path.splitext(rfn)
+
+            #print(f"humm {name} fn:{fn}, rfn:{rfn}, pwd:{pwd}")
 
             print(f"Reloading: {name}")
             if name in modules:
@@ -39,20 +47,11 @@ async def main(pwd):
                 spec.loader.exec_module(mod)
                 sys.modules[name] = mod
                 modules[name] = mod
-                # OG import lib
-                #modules[name] = importlib.import_module(name, package=name)
 
-if __name__ == "__main__":
-    sys.meta_path.append(myfinder())
-    try:
-        pwd = os.path.abspath(sys.argv[1])
-    except IndexError:
-        pwd = os.getcwd()
-
-
+def watch(f):
     while True:
         try:
-            asyncio.run(main(pwd))
+            asyncio.run(main(f))
         except KeyboardInterrupt:
             print("Exiting")
             exit(0)
@@ -61,3 +60,20 @@ if __name__ == "__main__":
             print("*"*80)
             print("Something went horribly wrong!, trace above, quick summary:")
             print(e)
+
+def watch_me():
+    try:
+        asyncio.get_running_loop()
+    except RuntimeError:
+        watch(sys.argv[0])
+
+
+def watch_args():
+    try:
+        pwd = os.path.abspath(sys.argv[1])
+    except IndexError:
+        pwd = os.getcwd()
+    watch(pwd)
+
+if __name__ == "__main__":
+    watch_args()
