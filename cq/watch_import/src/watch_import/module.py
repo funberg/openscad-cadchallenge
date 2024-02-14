@@ -33,9 +33,7 @@ async def main(pwd):
             if fn == pwd:
                 name = 'current'
             else:
-                name, ext = os.path.splitext(rfn)
-
-            #print(f"humm {name} fn:{fn}, rfn:{rfn}, pwd:{pwd}")
+                name, _ = os.path.splitext(rfn)
 
             print(f"Reloading: {name}")
             if name in modules:
@@ -61,12 +59,14 @@ def watch(f):
             print("Something went horribly wrong!, trace above, quick summary:")
             print(e)
 
+loops = {}
 def watch_me():
-    try:
-        asyncio.get_running_loop()
-    except RuntimeError:
-        watch(sys.argv[0])
-
+    fn = sys.argv[0]
+    if not fn in loops:
+        loop = asyncio.new_event_loop()
+        loops[fn] = loop
+        asyncio.set_event_loop(loop)
+        watch(fn)
 
 def watch_args():
     try:
