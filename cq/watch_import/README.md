@@ -4,7 +4,7 @@ Watch_import uses `watchfiles` to observe a file or folder. When a file is saved
 
 # Using as a file/folder watcher
 ```sh
-> watch_import PATH/TO_PYTHON FILES
+> watch_import PATH/TO_PYTHON_FILES
 ```
 
 # Using as an import

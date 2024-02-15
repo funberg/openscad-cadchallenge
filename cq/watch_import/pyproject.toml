@@ -2,7 +2,7 @@
 name = "watch_import"
 version = "0.0.1"
 authors = [
-    {name = "Daniel Sundberg", email = "daniel.sundberg@that-g-one-dot.com}"},
+    {name = "Daniel Sundberg"}
 ]
 description = "Watch target file/folder for changes in python files and import/reimport"
 readme = "README.md"
