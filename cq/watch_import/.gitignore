@@ -1,2 +1,3 @@
 build
 src/watch_import.egg-info
+__pycache__
