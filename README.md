@@ -1,5 +1,11 @@
 # CAD Challenge in OpenSCAD
 
+Images from reddit cad challenges, view in [challenges](./challenges) folder
+
+My solutions found in [scad](./scad) and [cq](./cq) folder
+
+Previews of files shown below
+
 ## Challenge 1
 <img src="challenges/1.png" alt="challenge 1" width="256px"/>
 <img src="renders/1_scad.png" alt="challenge 1 scad" width="256px"/>
