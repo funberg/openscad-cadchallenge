@@ -1,4 +1,4 @@
-# CAD Challenge in OpenSCAD
+# Reddit CAD Challenge in OpenSCAD/CadQuery
 
 Images from reddit cad challenges, view in [challenges](./challenges) folder
 
