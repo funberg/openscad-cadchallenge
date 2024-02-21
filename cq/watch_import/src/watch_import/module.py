@@ -50,6 +50,9 @@ def watch(f):
     while True:
         try:
             asyncio.run(main(f))
+        except FileNotFoundError:
+            print("File removed, exiting")
+            exit(0)
         except KeyboardInterrupt:
             print("Exiting")
             exit(0)
